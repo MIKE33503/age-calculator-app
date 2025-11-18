@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de edad</title>
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <main class="age-calculator-card">
+        
+        <form id="age-form" class="input-section">
+            
+            <div class="input-group">
+                <label for="day-input" class="input-label">DIA</label>
+                <input type="number" id="day-input" class="date-input" placeholder="DD" maxlength="2">
+                <p class="error-message" id="day-error"></p> 
+            </div>
+
+            <div class="input-group">
+                <label for="month-input" class="input-label">MES</label>
+                <input type="number" id="month-input" class="date-input" placeholder="MM" maxlength="2">
+                <p class="error-message" id="month-error"></p>
+            </div>
+
+            <div class="input-group">
+                <label for="year-input" class="input-label">AÑO</label>
+                <input type="number" id="year-input" class="date-input" placeholder="AAAA" maxlength="4">
+                <p class="error-message" id="year-error"></p>
+            </div>
+
+            <div class="divider-section">
+                <hr class="divider-line">
+                <button type="submit" id="calculate-btn" aria-label="Calcular Edad">
+                    <img src="./assets/images/icon-arrow.svg" alt="Ícono de flecha">
+                </button>
+            </div>
+        </form>
+
+        <section class="results-section">
+            <p class="result-line">
+                <span class="result-number" id="years-result">--</span>
+                <span class="result-text">años</span>
+            </p>
+            <p class="result-line">
+                <span class="result-number" id="months-result">--</span>
+                <span class="result-text">meses</span>
+            </p>
+            <p class="result-line">
+                <span class="result-number" id="days-result">--</span>
+                <span class="result-text">días</span>
+            </p>
+        </section>
+    </main>
+ <script src="app.js"></script>
+</body>
+</html>
